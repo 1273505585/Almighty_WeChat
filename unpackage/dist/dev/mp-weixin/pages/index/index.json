@@ -1,0 +1,14 @@
+{
+  "navigationStyle": "custom",
+  "enablePullDownRefresh": true,
+  "usingComponents": {
+    "orange-fullloading": "/uni_modules/orange-fullloading/components/orange-fullloading/orange-fullloading",
+    "u-toast": "/uview-ui/components/u-toast/u-toast",
+    "u-navbar": "/uview-ui/components/u-navbar/u-navbar",
+    "u-search": "/uview-ui/components/u-search/u-search",
+    "fy-dropdown": "/components/fy-dropdown/fy-dropdown",
+    "fy-dropdown-item": "/components/fy-dropdown-item/fy-dropdown-item",
+    "u-card": "/uview-ui/components/u-card/u-card",
+    "u-divider": "/uview-ui/components/u-divider/u-divider"
+  }
+}

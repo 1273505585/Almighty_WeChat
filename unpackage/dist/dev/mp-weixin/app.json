@@ -1,0 +1,45 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/release/view/second-hand",
+    "pages/release/release",
+    "pages/information/information",
+    "pages/test/test",
+    "pages/user/user"
+  ],
+  "subPackages": [],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "校园奥利给",
+    "navigationBarBackgroundColor": "#F8F8F8",
+    "backgroundColor": "#F8F8F8",
+    "onReachBottomDistance": 200
+  },
+  "tabBar": {
+    "color": "#a2a2a1",
+    "fontSize": "14",
+    "selectedColor": "#f61f1b",
+    "list": [
+      {
+        "text": "首页",
+        "pagePath": "pages/index/index",
+        "iconPath": "static/common/img/home.png",
+        "selectedIconPath": "static/common/img/take-home.png"
+      },
+      {
+        "text": "发布",
+        "pagePath": "pages/release/release",
+        "iconPath": "static/common/img/add.png",
+        "selectedIconPath": "static/common/img/add.png"
+      },
+      {
+        "text": "我的",
+        "pagePath": "pages/user/user",
+        "iconPath": "static/common/img/my.png",
+        "selectedIconPath": "static/common/img/take-my.png"
+      }
+    ]
+  },
+  "usingComponents": {},
+  "sitemapLocation": "sitemap.json"
+}
