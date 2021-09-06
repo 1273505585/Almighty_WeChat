@@ -1,0 +1,115 @@
+{
+	"easycom": {
+	        // 下载安装的方式需要前面的"@/"，npm安装的方式无需"@/"
+	        // 下载安装方式
+	        "^u-(.*)": "@/uview-ui/components/u-$1/u-$1.vue"
+	        // npm安装方式
+	        // "^u-(.*)": "uview-ui/components/u-$1/u-$1.vue"
+	    },
+
+  "pages": [
+    //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+    {
+      "path": "pages/index/index",
+      "style": {
+        "navigationStyle": "custom",
+        "enablePullDownRefresh": true,
+        "app-plus": {
+          "bounce": "none"
+        }
+      }
+    },
+	{
+	   	"path": "pages/release/view/second-hand",
+	   	"name": "second-hand",
+	   	"components": {
+	   		"default": "second-hand"
+	   	}
+	  },
+	{
+	  "path": "pages/release/release",
+	  "style": {
+	    "navigationBarTitleText": "发布任务",
+		"navigationStyle": "custom",
+	    "enablePullDownRefresh": true,
+	    "app-plus": {
+	      "bounce": "none"
+	    }
+	  }
+	  
+	},
+	{
+	  "path": "pages/release/view/second-hand",
+	  "style": {
+	    "navigationBarTitleText": "发布商品",
+		"navigationStyle": "custom",
+	    "enablePullDownRefresh": true,
+	    "app-plus": {
+	      "bounce": "none"
+	    }
+	  }
+	  
+	}
+	,
+	{
+	  "path": "pages/information/information",
+	  "style": {
+	    "navigationBarTitleText": "会话管理",
+	    "enablePullDownRefresh": false,
+	    "app-plus": {
+	      "bounce": "none"
+	    }
+	  }
+	}
+        ,{
+            "path" : "pages/test/test",
+            "style" : {
+				"navigationStyle": "custom",
+                "enablePullDownRefresh": true,
+                "navigationBarTitleText": "商品列表"
+            }
+            
+        },
+		{
+		    "path" : "pages/user/user",
+		    "style" : {
+				"navigationStyle": "custom",
+		        "enablePullDownRefresh": true,
+		        "navigationBarTitleText": ""
+		    }
+		    
+		}
+    ],
+  "globalStyle": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "校园奥利给",
+    "navigationBarBackgroundColor": "#F8F8F8",
+    "backgroundColor": "#F8F8F8",
+    "onReachBottomDistance": 200
+  },
+  "tabBar": {
+    "color": "#a2a2a1",
+    "fontSize": "14",
+    "selectedColor": "#f61f1b",
+    "list": [
+      {
+        "text": "首页",
+        "pagePath": "pages/index/index",
+        "iconPath": "static/common/img/home.png",
+        "selectedIconPath": "static/common/img/take-home.png"
+      },
+      {
+        "text": "发布",
+        "pagePath": "pages/release/release",
+        "iconPath": "static/common/img/add.png",
+        "selectedIconPath": "static/common/img/add.png"
+      },
+      {
+        "text": "我的",
+        "pagePath": "pages/user/user",
+        "iconPath": "static/common/img/my.png",
+        "selectedIconPath": "static/common/img/take-my.png"
+      }
+    ]
+  }
+}
