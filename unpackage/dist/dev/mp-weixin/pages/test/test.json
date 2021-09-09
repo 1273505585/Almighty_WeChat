@@ -1,0 +1,8 @@
+{
+  "navigationStyle": "custom",
+  "enablePullDownRefresh": true,
+  "navigationBarTitleText": "测试",
+  "usingComponents": {
+    "u-input": "/uview-ui/components/u-input/u-input"
+  }
+}

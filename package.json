@@ -1,0 +1,13 @@
+{
+    "id": "lidabai-standard",
+    "name": "zx-mall-one 全套商城前后端代码真正可商用，附前端api接口文档",
+    "version": "V1.0",
+    "description": "个人或者公司均可商用，企业正版免授权。",
+    "keywords": [
+        "电商平台,电商系统,商城平台,商城系统"
+    ],
+    "dependencies": {
+        "uview-ui": "^1.8.4",
+        "view-design": "^4.6.1"
+    }
+}

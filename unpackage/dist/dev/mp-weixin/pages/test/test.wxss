@@ -1,0 +1,19 @@
+
+.login-code {
+  width: 33%;
+  height: 38px;
+  float: right;
+._img {
+    cursor: pointer;
+    vertical-align: middle;
+}
+}
+.login-code-img {
+  height: 38px;
+}
+.login {
+	height: 100%;
+	width: 100%;
+   background-image: url(/static/common/img/login.jpg);
+}
+
