@@ -196,6 +196,7 @@
 
 
 
+
 /* page不能写带scope的style标签中，否则无效 */
 page {
 	background-color: rgb(240, 240, 240);
@@ -293,5 +294,9 @@ page {
   font-size: 22rpx;
   color: #909399;
   margin-top: 5px;
+}
+.loding.data-v-57280228 {
+  margin: auto;
+  width: 50%;
 }
 

@@ -2,11 +2,11 @@
 .login-code {
   width: 33%;
   height: 38px;
-  float: right;
+  float: right;}
 ._img {
     cursor: pointer;
     vertical-align: middle;
-}
+
 }
 .login-code-img {
   height: 38px;

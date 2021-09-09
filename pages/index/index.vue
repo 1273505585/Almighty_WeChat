@@ -1,8 +1,10 @@
 <template>
+	
+		<view>
+			<u-loading mode="flower" v-show="show" class="loding"></u-loading>
+			<scroll-view enable-flex="true"> </scroll-view>
 	<view class="page" v-if="datashow">
 		<view>
-			<u-loading mode="flower" v-show="show"></u-loading>
-			<scroll-view enable-flex="true"> </scroll-view>
 			<u-toast ref="uToast" />
 			<u-navbar :custom-back="message"  backIconName="chat" :backTextStyle="{color:'#ffffff'}" @click="chat"  :background="background" titleColor="#fff">
 			<u-search placeholder="请输入关键词" :clearabled="true" :animation="true" :clear="clear" v-model="keyword" @custom="TO" @search="TO" ></u-search>
@@ -52,6 +54,7 @@
 		</u-waterfall>
 		<u-loadmore bg-color="rgb(240, 240, 240)"  :load-text="loadText" :status="loadStatus" @loadmore="addRandomData"></u-loadmore>
 	</view>
+	</view>
 </template>
 
 <script>
@@ -84,9 +87,9 @@
 				]
 			}
 		},
-		created() {   //加载数据
+		onLoad() {   //加载数据
 			this.gdata();
-			
+			console.log(this.token.header)
 		},
 		onReachBottom() {
 			this.loadStatus = 'loading';
@@ -157,7 +160,6 @@
 				console.log(idx)
 			},
 			message(){//跳转到会话界面
-	
 				this.$u.route({
 				url: 'pages/information/information',		
 				})
@@ -170,7 +172,6 @@
 			    		icon: 'none'
 			    	})
 			    }
-				console.log("我能执行到这")
 				for(let i=0;i<res.rows.length;i++){
 					this.list.push(res.rows[i])
 				}
@@ -267,5 +268,8 @@
 		font-size: 22rpx;
 		color: $u-tips-color;
 		margin-top: 5px;
+	}
+	.loding{
+		margin: auto; width: 50%;
 	}
 </style>
